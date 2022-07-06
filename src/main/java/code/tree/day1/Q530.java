@@ -17,6 +17,10 @@ public class Q530 {
         prev = node;
         inorderTree(node.right);
     }
+    
+    public void test(){
+        return;
+    }
 
     public static void main(String args[]){
         TreeNode root = new TreeNode();
