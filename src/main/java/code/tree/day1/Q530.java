@@ -3,7 +3,7 @@ package code.tree.day1;
 public class Q530 {
 
     int minval = Integer.MAX_VALUE;
-    TreeNode prev;
+    TreeNode prev1;
     public int getMinimumDifference(TreeNode root) {
         inorderTree(root);
         return minval;
@@ -16,6 +16,10 @@ public class Q530 {
             minval = Math.min(node.val - prev.val, minval);
         prev = node;
         inorderTree(node.right);
+    }
+    
+    public void test(){
+        return;
     }
 
     public static void main(String args[]){
